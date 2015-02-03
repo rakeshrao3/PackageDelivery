@@ -67,6 +67,10 @@
 #foot{
 margin-top: 11%;
 }
+em{
+color:red;
+
+}
 </style>
 </head>
 <body>

@@ -89,9 +89,11 @@ em {
 </style>
 </head>
 <body>
+<!--header file  -->
 <header>
 	<%@include file="header.jsp" %>
 	</header>
+	<!--form  -->
 	<div class="panel panel-primary" id="panel">
 		<div class="panel-heading">
 			<h3 class="panel-title">Registration form</h3>
@@ -140,7 +142,7 @@ em {
 				<div class="form-group">
 					<label for="mobile" class="col-sm-3 control-label">Mobile<em>*</em></label>
 					<div class="col-sm-6">
-						<input type="tel" class="form-control required number "
+						<input type="tel" class="form-control required digits "
 							id="mobile" name="mobile" placeholder="Enter Mobile Number"
 							required="required" maxlength="10">
 					</div>
@@ -180,8 +182,7 @@ em {
 
 				<div class="form-group">
 					<div class="col-sm-offset-3 col-sm-10">
-						<button type="submit" class="btn btn-primary" id="submit">Sign
-							in</button>
+						<button type="submit" class="btn btn-primary" id="submit">Sign-Up</button>
 						&nbsp;&nbsp;&nbsp;
 						<button type="reset" class="btn btn-primary" id="clear">Clear</button>
 						&nbsp;&nbsp;&nbsp;
@@ -191,12 +192,12 @@ em {
 
 				
 			</form>
+			<!--form  ends-->
 		</div>
 	</div>
 
 
-	<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-	<!-- CORE JQUERY  -->
+	
 	<!-- <script src="assets/plugins/jquery.js"></script> -->
 	<!-- BOOTSTRAP SCRIPTS  -->
 	<script src="assets/plugins/bootstrap.js"></script>
@@ -233,9 +234,7 @@ em {
 								$(".tooltip.fade.right.in").remove();
 							});
 
-			 	$("#submit").click(function() {
-					var confim=confirm("Registered Successfully.. Forwarded to Login Page");
-				}); 
+			 	 
 
 			$("#cancle")
 					.click(
